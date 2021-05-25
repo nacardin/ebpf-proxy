@@ -1,5 +1,5 @@
 {
     "rust-analyzer.excludeGlobs": [
-        "proxy-probe/**"
+        "echo-probe/**"
     ]
 }

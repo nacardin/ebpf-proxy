@@ -1,2 +1,2 @@
 [workspace]
-members = ["proxy", "proxy-probe"]
+members = ["echo", "echo-probe"]

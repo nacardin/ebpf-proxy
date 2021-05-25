@@ -1,6 +1,7 @@
 [package]
-name = "proxy-probe"
+name = "echo-probe"
 version = "0.1.0"
+authors = ["Nick Cardin <nick@cardin.email>"]
 edition = '2018'
 
 [dependencies]
@@ -12,10 +13,7 @@ redbpf-probes = {version = "1.3", path = "../../redbpf/redbpf-probes", optional 
 default = []
 probes = ["redbpf-probes", "redbpf-macros"]
 
-[lib]
-path = "src/lib.rs"
-
 [[bin]]
-name = "sockmap"
+name = "echo"
 path = "src/probe.rs"
 required-features = ["probes"]
